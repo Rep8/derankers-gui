@@ -57,6 +57,7 @@ void setup()
 
 void bar(int n) {
   if (n == 0) {
+    link("https://github.com/Rep8/derankers-gui");
   }
   if (n == 1) {
     link("http://steamcommunity.com/id/wowrep/");

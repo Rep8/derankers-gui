@@ -79,6 +79,7 @@ public void setup()
 
 public void bar(int n) {
   if (n == 0) {
+    link("https://github.com/Rep8/derankers-gui");
   }
   if (n == 1) {
     link("http://steamcommunity.com/id/wowrep/");
@@ -291,37 +292,37 @@ class MenuList extends Controller<MenuList> {
       //menu.image(((PImage)m.get("image")), 140, 30, 88, 39 );
 
       if (m.get("copy").toString().charAt(5) == '1') {
-        menu.image(((PImage)loadImage("anyrank.png")), 140, 30, 88, 39 );
+        menu.image(((PImage)loadImage("ranks/anyrank.png")), 140, 30, 88, 39 );
       }
 
       if (m.get("copy").toString().charAt(4) == '1') {
-        menu.image(((PImage)loadImage("silver1.png")), 230, 30, 88, 39 );
+        menu.image(((PImage)loadImage("ranks/silver1.png")), 230, 30, 88, 39 );
       } else {
-        menu.image(((PImage)loadImage("silver1_dark.png")), 230, 30, 88, 39 );
+        menu.image(((PImage)loadImage("ranks/silver1_dark.png")), 230, 30, 88, 39 );
       }
 
       if (m.get("copy").toString().charAt(3) == '1') {
-        menu.image(((PImage)loadImage("nova1.png")), 320, 30, 88, 39 );
+        menu.image(((PImage)loadImage("ranks/nova1.png")), 320, 30, 88, 39 );
       } else {
-        menu.image(((PImage)loadImage("nova1_dark.png")), 320, 30, 88, 39 );
+        menu.image(((PImage)loadImage("ranks/nova1_dark.png")), 320, 30, 88, 39 );
       }
 
       if (m.get("copy").toString().charAt(2) == '1') {
-        menu.image(((PImage)loadImage("mg1.png")), 410, 30, 88, 39 );
+        menu.image(((PImage)loadImage("ranks/mg1.png")), 410, 30, 88, 39 );
       } else {
-        menu.image(((PImage)loadImage("mg1_dark.png")), 410, 30, 88, 39 );
+        menu.image(((PImage)loadImage("ranks/mg1_dark.png")), 410, 30, 88, 39 );
       }
 
       if (m.get("copy").toString().charAt(1) == '1') {
-        menu.image(((PImage)loadImage("le.png")), 500, 30, 88, 39 );
+        menu.image(((PImage)loadImage("ranks/le.png")), 500, 30, 88, 39 );
       } else {
-        menu.image(((PImage)loadImage("le_dark.png")), 500, 30, 88, 39 );
+        menu.image(((PImage)loadImage("ranks/le_dark.png")), 500, 30, 88, 39 );
       }
 
       if (m.get("copy").toString().charAt(0) == '1') {
-        menu.image(((PImage)loadImage("ge.png")), 590, 30, 88, 39 );
+        menu.image(((PImage)loadImage("ranks/ge.png")), 590, 30, 88, 39 );
       } else {
-        menu.image(((PImage)loadImage("ge_dark.png")), 590, 30, 88, 39 );
+        menu.image(((PImage)loadImage("ranks/ge_dark.png")), 590, 30, 88, 39 );
       }
 
 
@@ -369,7 +370,6 @@ class MenuList extends Controller<MenuList> {
     return items.get(theIndex);
   }
 }
-
   public void settings() {  size(700, 400, P3D); }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "derankers_gui_v1" };
